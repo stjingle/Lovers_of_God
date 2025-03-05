@@ -16,7 +16,7 @@ const Blog = () => {
 
   return (
     <div className="blog-container">
-      <h2>Latest Blog Posts</h2>
+      <h2>Latest Feeds</h2>
       {posts.length > 0 ? (
         posts.map(post => (
           <div key={post.id} className="blog-card">
