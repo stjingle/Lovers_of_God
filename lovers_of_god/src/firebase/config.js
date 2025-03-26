@@ -1,18 +1,25 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAXFtBGPk2TNVhbC6NN3h3pqKhFCu8S1NE",
-  authDomain: "lovers-of-god-73173.firebaseapp.com",
-  projectId: "lovers-of-god-73173",
-  storageBucket: "lovers-of-god-73173.firebasestorage.app",
-  messagingSenderId: "889981218073",
-  appId: "1:889981218073:web:2e38f29a0a952180ede988",
-  measurementId: "G-63ZL9YR712",
+  apiKey: "AIzaSyDaOK35tRuGoRTeRRfYmkSmncjll1Uec3I",
+  authDomain: "lovers-of-god-454917.firebaseapp.com",
+  projectId: "lovers-of-god-454917",
+  storageBucket: "lovers-of-god-454917.firebasestorage.app",
+  messagingSenderId: "877626020015",
+  appId: "1:877626020015:web:e93574fd5a860bbc84045a",
+  measurementId: "G-H8ZJBYQXR7"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
-export const auth = getAuth(app);
+const analytics = getAnalytics(app);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+// Export authentication and Firestore
+export { analytics, auth, db };

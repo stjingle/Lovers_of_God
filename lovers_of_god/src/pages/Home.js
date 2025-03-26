@@ -19,10 +19,3 @@ const Home = () => {
 
 export default Home;
 
-// import React from "react";
-
-// const Home = () => {
-//   return <h1>Welcome to Lovers of God</h1>;
-// };
-
-// export default Home;
